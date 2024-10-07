@@ -79,7 +79,7 @@ const Header = ({ isSticky = true }) => {
 
   return (
     <nav className={isSticky ? "bg-[#ed1c24] sticky top-0 z-20" : "bg-[#ed1c24] z-20"}>
-      <header className="flex flex-col lg:flex-row h-[auto] py-4 w-[auto] shrink-0 px-4 md:px-6 bg-[#ed1c24] shadow-lg max-w-[1920px] mx-auto">
+      <header className="flex flex-col lg:flex-row h-[auto]  w-[auto] shrink-0 px-4 md:px-6 bg-[#ed1c24] shadow-lg max-w-[1920px] mx-auto">
         <div className="flex justify-between items-center">
           <div>
             <Link href={"/"} className="mr-6 flex items-center" prefetch={false}>
@@ -169,10 +169,10 @@ const Header = ({ isSticky = true }) => {
       )}
       {isSearchOpen && (
         <div className="flex lg:hidden bg-[#ed1c24] px-4 py-2">
-          <div className="flex items-center flex-1 bg-white-10 px-3">
+          <div className="flex items-center flex-1 rounded-3xl bg-white-10 px-3">
             <SearchIcon />
             <input
-              className="pl-2 w-[100%] h-10 min-w-[200px] bg-white-10 outline-none transition-colors duration-300 ease-in-out"
+              className="pl-2 w-[100%] h-10 min-w-[200px] rounded-3xl  outline-none transition-colors duration-300 ease-in-out"
               placeholder="Search courses, resources."
               type="text"
             />

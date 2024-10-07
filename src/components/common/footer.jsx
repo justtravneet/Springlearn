@@ -4,10 +4,11 @@ import { footerData, imageUrlConstant } from "@/constants";
 
 const Footer = () => {
   return (
-    <footer className="bg-[#248de4] text-white-10 py-10">
+    <footer className="bg-[#ed1c24] text-white-10 py-10">
       <div className="container mx-auto px-4">
-        <Link href="/" className="mr-6 flex items-center">
+        <Link href="/" className="mr-6 flex items-center ">
           <img
+            className="w-[70px] sm:w-[80px] md:w-[90px] lg:w-[100px]"
             loading="lazy"
             src={imageUrlConstant?.logoUrl}
             alt="logo"

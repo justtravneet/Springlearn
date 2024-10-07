@@ -6,7 +6,7 @@ export const signUpData = [];
 export const logoUrl = "https://teclearns.com/images/logo.png" as string;
 
 export const imageUrlConstant = {
-  logoUrl: "/logo.png",
+  logoUrl: "/springlearns.jpeg",
   mainBanner: "/main-banner.png",
 };
 

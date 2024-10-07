@@ -78,8 +78,8 @@ const Header = ({ isSticky = true }) => {
   };
 
   return (
-    <nav className={isSticky ? "bg-[#248de4] sticky top-0 z-20" : "bg-[#248de4] z-20"}>
-      <header className="flex flex-col lg:flex-row h-[auto] py-4 w-[auto] shrink-0 px-4 md:px-6 bg-[#248de4] shadow-lg max-w-[1920px] mx-auto">
+    <nav className={isSticky ? "bg-[#ed1c24] sticky top-0 z-20" : "bg-[#ed1c24] z-20"}>
+      <header className="flex flex-col lg:flex-row h-[auto] py-4 w-[auto] shrink-0 px-4 md:px-6 bg-[#ed1c24] shadow-lg max-w-[1920px] mx-auto">
         <div className="flex justify-between items-center">
           <div>
             <Link href={"/"} className="mr-6 flex items-center" prefetch={false}>
@@ -87,7 +87,7 @@ const Header = ({ isSticky = true }) => {
                 loading="lazy"
                 src={imageUrlConstant?.logoUrl}
                 alt="logo"
-                className="min-w-[100px] pt-[5px]"
+                className="w-[70px] sm:w-[80px] md:w-[90px] lg:w-[100px] pt-[5px]"
               />
             </Link>
           </div>
@@ -138,7 +138,7 @@ const Header = ({ isSticky = true }) => {
         </div>
       </header>
       {isMenuOpen && (
-        <div className="flex flex-col gap-[20px] lg:hidden bg-[#248de4] px-4 py-4">
+        <div className="flex flex-col gap-[20px] lg:hidden bg-[#ed1c24] px-4 py-4">
           <div className="flex flex-col items-start gap-[10px] text-white-10">
             <motion.button whileTap={{ scale: 0.85 }} onClick={() => navigation("/courses")}>
               <span className="whitespace-nowrap text-ellipsis text-[17px]  sm:text-[19px]">Courses</span>
@@ -168,7 +168,7 @@ const Header = ({ isSticky = true }) => {
         </div>
       )}
       {isSearchOpen && (
-        <div className="flex lg:hidden bg-[#248de4] px-4 py-2">
+        <div className="flex lg:hidden bg-[#ed1c24] px-4 py-2">
           <div className="flex items-center flex-1 bg-white-10 px-3">
             <SearchIcon />
             <input
